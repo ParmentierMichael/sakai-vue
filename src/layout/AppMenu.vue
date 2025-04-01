@@ -5,19 +5,95 @@ import AppMenuItem from './AppMenuItem.vue';
 
 const model = ref([
     {
-        label: 'Home',
+        label: 'Présentation :) ',
+        icon: 'pi pi-fw pi-bookmark',
         items: [
-            { 
-                label: 'Dashboard', 
-                icon: 'pi pi-fw pi-home', 
-                to: '/' 
-            }, 
-            { 
-                label: 'Premier exemple', 
-                icon: 'pi pi-fw pi-home', 
-                to: '/A01' 
+            {
+                label: '1- Branch Components',
+                icon: 'pi pi-fw pi-bookmark',
+                items: [
+                    {
+                        label: 'Normal',
+                        icon: 'pi pi-fw pi-home',
+                        to: '/A01'
+                    },
+                    {
+                        label: 'Opti',
+                        icon: 'pi pi-fw pi-home',
+                        to: '/A01_end'
+                    }
+                ]
+            },
+            {
+                label: '2- Optimisation de props',
+                icon: 'pi pi-fw pi-bookmark',
+                items: [
+                    {
+                        label: 'Normal',
+                        icon: 'pi pi-fw pi-home',
+                        to: '/A02'
+                    },
+                    {
+                        label: 'Opti',
+                        icon: 'pi pi-fw pi-home',
+                        to: '/A02_end'
+                    }
+                ]
+            },
+            {
+                label: '3- Fuite mémoire',
+                icon: 'pi pi-fw pi-bookmark',
+                items: [
+                    {
+                        label: 'Normal',
+                        icon: 'pi pi-fw pi-home',
+                        to: '/A03'
+                    },
+                    {
+                        label: 'Opti',
+                        icon: 'pi pi-fw pi-home',
+                        to: '/A03_end'
+                    }
+                ]
+            },
+            {
+                label: '4- Template Lists',
+                icon: 'pi pi-fw pi-bookmark',
+                items: [
+                    {
+                        label: 'Normal',
+                        icon: 'pi pi-fw pi-home',
+                        to: '/A04'
+                    },
+                    {
+                        label: 'Opti',
+                        icon: 'pi pi-fw pi-home',
+                        to: '/A04_end'
+                    }
+                ]
             }
-
+        ]
+    },
+    {
+        label: 'Performance & Affichage ',
+        icon: 'pi pi-fw pi-bookmark',
+        items: [
+            {
+                label: 'Eviter les rerender inutiles',
+                icon: 'pi pi-fw pi-bookmark',
+                items: [
+                    {
+                        label: 'v-once',
+                        icon: 'pi pi-fw pi-home',
+                        to: '/B01'
+                    },
+                    {
+                        label: 'v-memo',
+                        icon: 'pi pi-fw pi-home',
+                        to: '/B02'
+                    }
+                ]
+            }
         ]
     },
     {

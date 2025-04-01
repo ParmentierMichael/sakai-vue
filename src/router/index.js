@@ -15,8 +15,53 @@ const router = createRouter({
                 },
                 {
                     path: '/A01',
-                    name: 'dashboard',
-                    component: () => import('@/views/A01.vue')
+                    name: 'pres1_start',
+                    component: () => import('@/views/presentation/A01/A01Start.vue')
+                },
+                {
+                    path: '/A01_end',
+                    name: 'pres1_end',
+                    component: () => import('@/views/presentation/A01/A01End.vue')
+                },
+                {
+                    path: '/A02',
+                    name: 'pres2_start',
+                    component: () => import('@/views/presentation/A02/A02Start.vue')
+                },
+                {
+                    path: '/A02_end',
+                    name: 'pres2_end',
+                    component: () => import('@/views/presentation/A02/A02End.vue')
+                },
+                {
+                    path: '/A03',
+                    name: 'pres3_start',
+                    component: () => import('@/views/presentation/A03/A03Start.vue')
+                },
+                {
+                    path: '/A03_end',
+                    name: 'pres3_end',
+                    component: () => import('@/views/presentation/A03/A03End.vue')
+                },
+                {
+                    path: '/A04',
+                    name: 'pres4_start',
+                    component: () => import('@/views/presentation/A04/A04Start.vue')
+                },
+                {
+                    path: '/A04_end',
+                    name: 'pres4_end',
+                    component: () => import('@/views/presentation/A04/A04End.vue')
+                },
+                {
+                    path: '/B01',
+                    name: 'pres5_start',
+                    component: () => import('@/views/presentation/B01/B01Start.vue')
+                },
+                {
+                    path: '/B02',
+                    name: 'pres6_start',
+                    component: () => import('@/views/presentation/B02/B02Start.vue')
                 },
                 {
                     path: '/uikit/formlayout',
