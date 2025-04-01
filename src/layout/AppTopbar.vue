@@ -1,3 +1,4 @@
+<!-- eslint-disable prettier/prettier -->
 <script setup>
 import { useLayout } from '@/layout/composables/layout';
 import AppConfigurator from './AppConfigurator.vue';
