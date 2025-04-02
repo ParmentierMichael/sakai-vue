@@ -8,13 +8,13 @@ const router = createRouter({
             path: '/',
             component: AppLayout,
             children: [
+                // {
+                //     path: '/',
+                //     name: 'dashboard',
+                //     component: () => import('@/views/Dashboard.vue')
+                // },
                 {
                     path: '/',
-                    name: 'dashboard',
-                    component: () => import('@/views/Dashboard.vue')
-                },
-                {
-                    path: '/A01',
                     name: 'pres1_start',
                     component: () => import('@/views/presentation/A01/A01Start.vue')
                 },
@@ -62,6 +62,26 @@ const router = createRouter({
                     path: '/B02',
                     name: 'pres6_start',
                     component: () => import('@/views/presentation/B02/B02Start.vue')
+                },
+                {
+                    path: '/B05',
+                    name: 'pres6bis_start',
+                    component: () => import('@/views/presentation/B05/B05Start.vue')
+                },
+                {
+                    path: '/B03',
+                    name: 'pres7_start',
+                    component: () => import('@/views/presentation/B03/B03Start.vue')
+                },
+                {
+                    path: '/B04',
+                    name: 'pres8_start',
+                    component: () => import('@/views/presentation/B04/B04Start.vue')
+                },
+                {
+                    path: '/B04_end',
+                    name: 'pres8_end',
+                    component: () => import('@/views/presentation/B04/B04End.vue')
                 },
                 {
                     path: '/uikit/formlayout',

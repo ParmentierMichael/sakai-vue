@@ -1,6 +1,6 @@
 <script setup>
-import { ref } from 'vue';
 import Button from 'primevue/button';
+import { ref } from 'vue';
 
 const name = ref('Martine');
 
@@ -16,6 +16,8 @@ function reloadName() {
 </script>
 
 <template>
+    <!-- Exemple d'utilisation de v-once    -->
+
     <h2>Bienvenue {{ name }} sans v-once</h2>
     <h2 v-once>Bienvenue {{ name }} avec v-once</h2>
 

@@ -1,6 +1,6 @@
 <script setup>
-import { ref, onMounted, computed } from 'vue';
 import { ProductService } from '@/service/ProductService';
+import { computed, onMounted, ref } from 'vue';
 import ProductEmpty from './components/ProductEmpty.vue';
 import ProductList from './components/ProductList.vue';
 

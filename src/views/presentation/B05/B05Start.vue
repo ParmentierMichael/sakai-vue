@@ -23,9 +23,12 @@ const filteredProducts = computed(() => {
 </script>
 
 <template>
+    <!-- Exemple de rerender d'une liste -->
+
     <input type="text" v-model="searchQuery" placeholder="Rechercher un produit par nom" class="border border-gray-300 rounded-md px-4 py-2 w-1/3 pb-3 mb-6" />
 
     <template v-if="filteredProducts.length">
+        <!-- Voir composant enfant -->
         <product-list :products="filteredProducts" />
     </template>
     <div v-else class="flex flex-col gap-2">
